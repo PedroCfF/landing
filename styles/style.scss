@@ -1,0 +1,31 @@
+$header1: 4rem;
+$header2: 3rem;
+$header3: 2,5rem;
+$header4: 2rem;
+$text: 1rem;
+
+//paleta de colores
+$dark-blue: #154253;
+$ligth-blue: #8CFFAC;
+$white: #ffffff;
+$cream: #FFF3B0;
+$accent:#E63946;
+
+
+@mixin flex-simple($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+// @import "section";
+// @import "footer";

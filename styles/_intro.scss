@@ -1,0 +1,74 @@
+.intro {
+  background-color: $dark-blue;
+  width: 100%;
+  height: 110vh;
+  @include flex-simple(center, center);
+}
+
+.intro-container {
+  width: 90%;
+  height: 80%;
+  @include flex-simple(center, center);
+}
+
+.cover {
+  @include flex-simple(center, center);
+  width: 100%;
+}
+
+.cover-info {
+  color: $white;
+  @include flex(center, flex-end, column);
+  flex: 1 1 auto;
+  width: 100%;
+  transition: all 1s ease-in-out;
+
+  h3 {
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 200;
+  }
+}
+
+.cover-info-anim {
+  color: $white;
+  @include flex(center, center, column);
+  flex: 1 1 auto;
+  width: 100%;
+
+  h3 {
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 200;
+  }
+}
+
+.cover-deco {
+  @include flex-simple(flex-start, flex-end);
+  flex: 1 1 auto;
+  width: 100%;
+  height: 2.6rem;
+  margin-left: 3rem;
+  animation: dot 1s ease-in-out;
+}
+
+.bxs-circle {
+  color: $accent;
+}
+
+#b1 {
+  position: absolute;
+}
+
+@keyframes dot {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
